@@ -194,8 +194,7 @@ insertBooks().catch(console.error);
  *    db.books.find({ genre: "Fiction" })
  *
  * 5. Find in-stock books:
- *    db.books.find({ in_stock: true })
- */ 
+ *    db.books.find({ in_stock: true })*/ 
 
 // 1. Find all books;
 db.books.find({}).pretty();
