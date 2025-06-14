@@ -178,6 +178,7 @@ async function insertBooks() {
 // Run the function
 insertBooks().catch(console.error);
 
+
 // 1. Find all books;
 db.books.find({}).pretty();
 
