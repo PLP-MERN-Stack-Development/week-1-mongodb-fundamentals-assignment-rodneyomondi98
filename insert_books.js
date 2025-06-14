@@ -196,3 +196,18 @@ insertBooks().catch(console.error);
  * 5. Find in-stock books:
  *    db.books.find({ in_stock: true })
  */ 
+
+// 1. Find all books;
+db.books.find({}).pretty();
+
+// 2. Find books by a specific author (e.g., George Orwell)
+db.books.find({ author: "George Orwell" }).pretty();
+
+// 3. Find books published after a certain year (e.g., 1950)
+db.books.find({ published_year: { $gt: 1950 } }).pretty();
+
+// 4. Find books in a specific genre (e.g., Fiction)
+db.books.find({ genre: "Fiction" }).pretty();
+
+// 5. Find in-stock books
+db.books.find({ in_stock: true }).pretty();
